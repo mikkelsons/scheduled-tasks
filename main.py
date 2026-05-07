@@ -30,7 +30,7 @@ if today in birthdays_dict:
 
 now = dt.datetime.now()
 weekday = now.weekday()
-if weekday == 3:
+if weekday == 0:
     with open("quotes.txt") as quote_file:
         all_quotes = quote_file.readlines()
         quote = random.choice(all_quotes)
