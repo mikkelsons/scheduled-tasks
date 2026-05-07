@@ -38,7 +38,7 @@ if weekday == 3:
     print(quote)
     with smtplib.SMTP('smtp.gmail.com', 587) as connection:
         connection.starttls()
-        connection.login(user=MY_EMAIL, password=PASSWORD)
+        connection.login(user=MY_EMAIL, password=MY_PASSWORD)
         connection.sendmail(
             from_addr=MY_EMAIL,
             to_addrs=MY_EMAIL,
